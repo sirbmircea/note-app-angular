@@ -1,0 +1,18 @@
+<form #searchForm="ngForm" class="d-flex" role="search" (ngSubmit)="onSubmit()">
+  <input
+    id="noteTitleInput"
+    class="form-control me-2"
+    type="search"
+    aria-label="Search"
+    ngModel
+    name="noteTitle"
+    required="true"
+  />
+  <button
+    [disabled]="searchForm.invalid"
+    class="btn btn-outline-success"
+    type="submit"
+  >
+    Search
+  </button>
+</form>

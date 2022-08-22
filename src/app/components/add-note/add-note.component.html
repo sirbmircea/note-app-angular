@@ -1,0 +1,38 @@
+<form #addForm="ngForm" (ngSubmit)="onAddNote(addForm)">
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label"
+      >Enter note title</label
+    >
+    <input
+      type="email"
+      class="form-control"
+      id="exampleFormControlInput1"
+      placeholder="note title"
+      ngModel
+      name="noteTitle"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label"
+      >Enter note content</label
+    >
+    <textarea
+      class="form-control"
+      id="exampleFormControlTextarea1"
+      rows="3"
+      ngModel
+      name="noteContent"
+      required
+    ></textarea>
+  </div>
+
+  <button
+    [disabled]="addForm.invalid"
+    type="button"
+    class="btn btn-success"
+    type="submit"
+  >
+    Send
+  </button>
+</form>
