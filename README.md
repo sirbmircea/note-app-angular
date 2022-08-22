@@ -1,11 +1,16 @@
 # note-app-angular
 
+A note app that stores notes by Command Line or by Http Requests
 
 ## Setup project
 
 #### Install dependencies
 ```shell
 npm install 
+```
+#### Run application
+```shell
+ng serve
 ```
 
 
