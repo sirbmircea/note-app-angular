@@ -1,6 +1,6 @@
 # note-app-angular
 
-A note app that stores notes by Command Line or by Http Requests
+A note app that stores notes by [Command Line](https://github.com/sirbmircea/notes-app/tree/optimizations-post-submission) or by Angular based Web Application
 
 ## Setup project
 
